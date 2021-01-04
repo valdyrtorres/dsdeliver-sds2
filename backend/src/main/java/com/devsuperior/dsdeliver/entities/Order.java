@@ -29,7 +29,7 @@ public class Order implements Serializable {
 	private Instant moment;
 	private OrderStatus status;
 	
-	// Para evitar repetições
+	// Para evitar repeticoes
 	@ManyToMany
 	@JoinTable(name = "tb_order_product",
 		joinColumns = @JoinColumn(name = "order_id"),

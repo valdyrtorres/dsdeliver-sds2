@@ -14,16 +14,16 @@ import com.devsuperior.dsdeliver.repositories.ProductRepository;
 @Service
 public class ProductService {
 	
-	// Inserindo a injeção de dependência
+	// Inserindo a injecao de dependencia
 	@Autowired
 	private ProductRepository repository;
 	
-	// Não faz lock de escrita
+	// Nao faz lock de escrita
 	@Transactional(readOnly = true)
 	public List<ProductDTO> findAll() {
 		List<Product> list = repository.findAllByOrderByNameAsc();
 		
-		// Usando expressão Lambda
+		// Usando expressao Lambda
 		return list.stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
 	}
 }

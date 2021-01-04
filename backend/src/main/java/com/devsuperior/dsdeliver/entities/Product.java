@@ -101,8 +101,8 @@ public class Product implements Serializable {
 		return true;
 	}
 	
-	// O mapeamento para os pedidos (orders) não foi realizado, pois ainda não
-	// precisamos saber pelo app, o número de pedidos por produto, por isso não
-	// aqui a coleção orders que deveria ter de acordo com o modelo de dados
+	// O mapeamento para os pedidos (orders) nao foi realizado, pois ainda nao
+	// precisamos saber pelo app, o numero de pedidos por produto, por isso nao
+	// colocamos aqui a colecao orders que deveria existir de acordo com o modelo de dados
 
 }
